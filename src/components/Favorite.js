@@ -12,7 +12,7 @@ const Favorite = () => {
 					<div className="favImage" />
 				</Slide>
 				<Slide right>
-					<div className="viola">
+					<div className="textContent">
 						<p>
 							Strawberries and cream and spice with a zip of balsamic. This cake
 							celebrates all the classic strawberry combinations, a little like a

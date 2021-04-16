@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './Hero.css';
 import Sidebar from './Sidebar';
-import Slide from 'react-reveal/Reveal';
 
 const Hero = () => {
 	const [show, setShow] = useState(false);
