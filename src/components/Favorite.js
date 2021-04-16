@@ -1,6 +1,7 @@
 import React from 'react';
 import './Favorite.css';
 import Slide from 'react-reveal/Reveal';
+import favorite from '../images/favourite.jpg';
 
 const Favorite = () => {
 	return (
@@ -9,7 +10,7 @@ const Favorite = () => {
 
 			<div className="favContent">
 				<Slide left>
-					<div className="favImage" />
+					<img src={favorite} className="favImage" alt="cake" />
 				</Slide>
 				<Slide right>
 					<div className="textContent">
