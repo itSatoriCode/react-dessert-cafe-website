@@ -1,0 +1,30 @@
+
+.footerContainer{
+	background-color: #0d0909;
+	display: flex;
+  color: white;
+	justify-content: center;
+	align-items: flex-start;
+  min-height: 70px;
+	max-width: 100vw;
+}
+
+.footerColumn{
+	padding: 16px 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+  font-size: 1rem;
+}
+
+.footerColumn div{
+  margin-top: 5px;
+}
+
+.footerColumn a{
+  text-decoration: none;
+  color: white;
+}
+

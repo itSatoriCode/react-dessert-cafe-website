@@ -1,10 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Hero from './components/Hero';
+import Favorite from './components/Favorite';
+import Cakes from './components/Cakes';
+import Chefs from './components/Chefs';
+import Footer from './components/Footer';
 
 function App() {
 	return (
-		<>
-			<h1>sup</h1>
-		</>
+		<Router>
+			<Hero></Hero>
+			<Cakes id="menu"></Cakes>
+			<Favorite></Favorite>
+			<Chefs id="staff"></Chefs>
+			<Footer></Footer>
+		</Router>
 	);
 }
 

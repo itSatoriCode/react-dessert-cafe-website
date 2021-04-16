@@ -1,0 +1,87 @@
+.favContainer{
+  /* background: #fdfdfd; */
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/restaurant-2.jpg');
+  height: 700px;
+  /* max-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+
+}
+
+.favContent{
+	height: calc(100vh - 80px);
+	max-height: 50%;
+	/* padding: 0rem calc(100vw/2); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 745px){
+  .favContent{
+    flex-direction: column;
+  }
+}
+
+.favContainer h2 {
+    font-size: clamp(1rem, 3rem, 4rem);
+    margin: 1rem 0;
+    z-index: 10;
+  }
+
+  .favContainer h3 {
+    font-size: clamp(1rem, 2vw, 3rem);
+    margin: 1rem 0;
+  }
+
+.favContainer p {
+    margin-bottom: 1rem;
+    /* font-size: clamp(1rem, 2vw, 2rem); */
+    width: 45vw;
+    /* margin-bottom: 30%; 
+    margin-left: 60px;  */
+    width: 400px;
+    text-align: right
+  }
+.viola {
+  /* height: 100px; */
+  padding: 10px;
+  background: #f76d2850;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+  .favImage {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/restaurant.jpg'); */
+    background: url('../images/favourite.jpg');
+    min-height: 300px;
+    min-width: 500px;
+    margin-left: 30px;
+    box-shadow: 3px 5px #ffc500;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+.favBtn{
+	font-size: 1rem;
+	padding: 1rem 4rem;
+	border: none;
+  width: 250px;
+  align-self: center;
+		background: #F76D28;
+	color: #fff;
+	transition: 0.2 ease-out;
+}
+.favBtn:hover {
+	background: #5203C3;
+
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+.cakeContainer{
+	/* width: 100vw; */
+	min-height: 100vh;
+	padding: 5rem calc((100vw - 1300px) / 2);
+	background: #150f0f;
+	color: #fff;
+}
+
+.cakeWrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.cakeCard{
+	margin: 0 2rem;
+	line-height: 2;
+	width: 300px;
+
+}
+.cakeImg{
+	height: 200px;
+	box-shadow: 5px 3px #cea903;
+  width: auto;
+}
+
+.cakeHeading{
+	font-size: clamp(2rem, 2.5vw, 3rem);
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.protTitle{
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.cakeInfo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+.cakeDesc{
+	margin-bottom: 1rem;
+}
+
+.cakePrice{
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	margin-top: auto;
+
+}
+
+.cakeBtn{
+	font-size: 1rem;
+	padding: 1rem 4rem;
+	border: none;
+		background: #F76D28;
+	color: #fff;
+	transition: 0.2 ease-out;
+}
+.cakeBtn:hover {
+	background: #5203C3;
+
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}

@@ -1,0 +1,96 @@
+.sideContainer{
+	position: fixed;
+	z-index: 100;
+	width: 350px;
+	height: 100%;
+	background: #201414;
+	display: grid;
+	align-items: center;
+	top: 0;
+	transition: left 0.3s ease-in-out;
+	left: -500px;
+}
+
+.sideContainer.show{
+  left:0;
+}
+@media screen and (max-width: 400px) {
+  .sideContainer{
+    width: 100%;
+  }
+}
+
+/* export const CloseIcon = styled(FaTimes){
+	color: #000;
+} */
+
+.close{
+	position: absolute;
+	top: 1.2rem;
+	right: 1.5rem;
+	background: transparent;
+	border: transparent;
+	font-size: 1.4rem;
+	cursor: pointer;
+	outline: none;
+	color: #fdfdfd;
+  transition: transform 0.5s ease-in;
+}
+.close:hover{
+  transform: scale(1.3)
+}
+
+.sideMenu{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 80px);
+	text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .sideMenu {
+    grid-template-rows: repeat(4, 60px);
+  }
+}
+
+.sideLink{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.2s ease-in-out;
+	color: #fdfdfd;
+	cursor: pointer;
+}
+
+.sideLink:hover {
+  color: #F76D28;
+  transition: 0.2s ease-in-out;
+}
+
+.btnWrap{
+	display: flex;
+	justify-content: center;
+  margin-top: 3rem;
+}
+
+.sideRoute{
+	background: #F76D28;
+	white-space: nowrap;
+	padding: 16px 64px;
+	color: #fff;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	text-decoration: none;
+}
+
+.sideRoute:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1)
+}

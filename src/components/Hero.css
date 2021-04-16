@@ -1,0 +1,70 @@
+.container{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/restaurant.jpg');
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.content{
+	height: calc(100vh - 80px);
+	max-height: 100%;
+	/* padding: 0rem calc(100vw/2); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contentItems{
+	/* background: #f76d2844; */
+	display: flex;
+  width: clamp(100%,650,100%);
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	margin-left: 50px;
+	margin-top: 100px;
+	align-items: flex-start;
+	padding: 1rem 3rem;
+	width: 700px;
+	color:white;
+}
+@media screen and (max-width: 650px) {
+  .contentItems{
+  width: 100%;
+
+  }
+}
+.navHead{
+	font-size: clamp(1rem, 3rem, 5rem);
+	margin-bottom: 2rem;
+	letter-spacing: 3px;
+	line-height: 1;
+}
+
+p{
+	/* font-size: clamp(2rem, 2.5vw, 3rem); */
+	font-size: clamp(1rem, 1.2rem, 1.4rem);
+	/* font-size: clamp(0.5rem, 1.2rem, 2rem); */
+	/* font-size: 1rem; */
+	margin-bottom: 2rem;
+	line-height: 1.3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+	font-size: 1.8rem;
+	padding: 1rem 2rem;
+	border:solid 5px #F76D28;
+	color: white;
+	transition: 0.2s ease-out;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.btn:hover {
+		background: #F76D28;
+		transition: 0.2s ease-out;
+		cursor: pointer;
+		transform: scale(1.05)
+}
